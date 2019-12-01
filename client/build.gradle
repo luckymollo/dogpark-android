@@ -1,0 +1,13 @@
+apply from: file('../gradle/app.gradle')
+
+android {
+    defaultConfig {
+        applicationId "com.luckymollo.dogpark.client"
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation project(path: ':core')
+}
